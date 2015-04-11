@@ -12,7 +12,7 @@ dataset <- data[which(data$Date == d1 | data$Date == d2),]
 dataset$dt <- ymd_hms(paste(dataset$Date, dataset$Time))
 
 #open a png device, and plot 4 graphs in two columns
-png(filename = "plot4")
+png(filename = "plot4.png")
 par(mfrow = c(2,2))
 # the first plot will be Global Active Power
 with (dataset, {

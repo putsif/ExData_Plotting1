@@ -10,7 +10,7 @@ d2 <- ymd("2007-02-02")
 subData <- data[which(data$Date == d1 | data$Date == d2),]
 
 # plot a histogram of Global Active Power.
-png(filename = "plot1")
+png(filename = "plot1.png")
 hist(subData$Global_active_power, col = "red", 
      main = "Global Active Power", xlab = "Global Active Power (kilowatts",
      ylab = "Frequency")

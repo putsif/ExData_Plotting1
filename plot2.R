@@ -12,7 +12,7 @@ dataset <- data[which(data$Date == d1 | data$Date == d2),]
 dataset$dt <- ymd_hms(paste(dataset$Date, dataset$Time))
 
 #open a png device, and plot Global Active Power versus date/time
-png(filename = "plot2")
+png(filename = "plot2.png")
 plot(dataset$dt, dataset$Global_active_power, type = "l",
      ylab = "Global active power (kilowatts)", xlab = "")
 dev.off()

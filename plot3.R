@@ -12,7 +12,7 @@ dataset <- data[which(data$Date == d1 | data$Date == d2),]
 dataset$dt <- ymd_hms(paste(dataset$Date, dataset$Time))
 
 #open a png device, and plot Energy submetering versus date/time
-png(filename = "plot3")
+png(filename = "plot3.png")
 with (dataset, plot(dt, Sub_metering_1, type = "l", col = "black",
                     ylab = "Energy sub metering", xlab = ""))
 points(dataset$dt, dataset$Sub_metering_2, type = "l", col = "red")
